@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="valor1" id="idValor1"> +
+    <input type="number" name="valor2" id="idValor2">
+    <input type="button" value="Somar" name="btnSoma" id="idBtnSoma" onclick="soma()">
+
+    <div id="result">Resultado</div>
+
+    <script>
+        function soma() {
+            return document.getElementById("result").innerText = "Resultado =  "+(Number(document.
+            querySelector("input#idValor1").value) + Number(document.querySelector("input#idValor2").value));
+        }
+    </script>
+</body>
+</html>

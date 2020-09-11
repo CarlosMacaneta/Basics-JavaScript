@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Inicio:&nbsp;&nbsp;
+                <input type="number" name="nStart" id="inicio" min="0">
+            </p>
+            <p>
+                Fim:&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="nEnd" id="fim" min="0">
+            </p>
+            <p>
+                Passo: 
+                <input type="number" name="nStep" id="passo" min="0">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="resultado">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CMJ</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

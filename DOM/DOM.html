@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: brown;
+            color: white;
+            font: normal 14pt san-serif; 
+        }
+        div#area{
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmousemove="moving()" onmouseover="over()" onmouseout="reset()">Interaja... </div>
+
+    <script>
+        function clicar(){
+            document.getElementById("area").innerHTML = "<strong>Clicou</strong>"
+        }
+
+        function moving() {
+            document.getElementById("area").innerText = "Movendo o mouse"
+        }
+
+        function over(){
+            document.getElementById("area").innerText = "Mouse no quadrado"
+        }
+
+        function reset() {
+            document.getElementById("area").innerText = "Interaja..."
+        }
+    </script>
+</body>
+</html>
